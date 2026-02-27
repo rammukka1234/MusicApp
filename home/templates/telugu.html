@@ -1,0 +1,65 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="music-container">
+
+    <div class="music-card">
+        <img src="{% static 'image/adiga.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Adiga Adiga</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Adiga Adiga.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+        
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/Niluvadhamu Ninu Epudaina.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Niluvadhamu Ninu Epudaina</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Niluvadhamu Ninu Epudaina.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/Orange.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Nenu Nuvvantu</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Nenu Nuvvantu.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/I.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Nuvvunte Naa Jathagaa</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Nuvvunte Naa Jathagaa.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/pilla.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Pillaa Raa</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Pillaa Raa.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

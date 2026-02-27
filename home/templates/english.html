@@ -1,0 +1,64 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="music-container">
+
+    <div class="music-card">
+        <img src="{% static 'image/danza.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>danza kuduro</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/danza kuduro.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/senorita.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Senorita</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Senorita.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/shake.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Shake It To The Max</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Shake It To The Max.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/shakira.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>shakira</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/shakira.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/shape of you.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Shape of You</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Shape of You.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

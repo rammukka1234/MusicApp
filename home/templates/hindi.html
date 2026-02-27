@@ -1,0 +1,64 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="music-container">
+
+    <div class="music-card">
+        <img src="{% static 'image/sahiba.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Sahiba</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Sahiba.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/af.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Afghan Jalebi</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Afghan Jalebi.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/blue.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Blue Eyes</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Blue Eyes.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/Nashe.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Nashe Si Chadh Gayi</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Nashe Si Chadh Gayi.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="music-card">
+        <img src="{% static 'image/BOM.jpg' %}" class="song-img">
+        <div class="song-info">
+            <h2>Bom Diggy Diggy</h2>
+            <p>Artist Name</p>
+            <audio controls>
+                <source src="{% static 'songs/Bom Diggy Diggy.mp3' %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

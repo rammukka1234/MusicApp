@@ -1,0 +1,86 @@
+/* ===== NAVBAR CONTAINER ===== */
+.navbar{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.logo{
+    color: #1DB954;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ===== MENU ===== */
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== LINKS ===== */
+.navbar ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+/* ===== HOVER EFFECT ===== */
+.navbar ul li a:hover{
+    color: white;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(29, 185, 84, 0.6);
+}
+
+/* ===== ANIMATED UNDERLINE ===== */
+.navbar ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #1DB954;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+
+/* ===== SEARCH BOX ===== */
+.search-box input{
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #282828;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+/* Placeholder */
+.search-box input::placeholder{
+    color: #b3b3b3;
+}
+
+/* Focus Glow */
+.search-box input:focus{
+    background-color: #333;
+    box-shadow: 0 0 8px rgba(29, 185, 84, 0.8);
+}

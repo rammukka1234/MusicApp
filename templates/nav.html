@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <div class="logo">MyMusic</div>
+
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'telugu' %}">Telugu Songs</a></li>
+        <li><a href="{% url 'hindi' %}">Hindi Songs</a></li>
+        <li><a href="{% url 'english' %}">English Songs</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>   
+    </ul>
+
+    <!-- Search Box -->
+    <div class="search-box">
+        <input type="text" placeholder="Search songs...">
+    </div>
+</nav>
